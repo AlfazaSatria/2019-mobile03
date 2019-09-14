@@ -6,22 +6,36 @@
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
 	tools:context=".MainActivity"
-	>
+	android:weightSum="2">
 
 
-	<LinearLayout
-		android:layout_width="match_parent"
-		android:layout_height="match_parent"
+	<androidx.constraintlayout.widget.Guideline
+		android:id="@+id/guideline4"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:background="@drawable/ic_launcher_background"
 		android:orientation="horizontal"
-		tools:layout_editor_absoluteX="1dp"
-		tools:layout_editor_absoluteY="362dp">
+		app:layout_constraintGuide_begin="395dp" />
 
-		<LinearLayout
-			android:layout_width="match_parent"
-			android:layout_height="371dp"
-			android:orientation="horizontal"
-			android:background="#FF0000"/>
-	</LinearLayout>
+	<androidx.constraintlayout.widget.ConstraintLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		tools:layout_editor_absoluteX="-1dp"
+		tools:layout_editor_absoluteY="393dp"
+		android:layout_weight="1"
+		android:background="#FFFFFFFF">
+
+	</androidx.constraintlayout.widget.ConstraintLayout>
+
+	<androidx.constraintlayout.widget.ConstraintLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		tools:layout_editor_absoluteX="-1dp"
+		tools:layout_editor_absoluteY="393dp"
+		android:layout_weight="1"
+		android:background="#FF0000">
+
+	</androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
 
 
